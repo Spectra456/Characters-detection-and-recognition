@@ -78,7 +78,7 @@ def draw(image, boxes, labels):
 if __name__ == '__main__':
 
     start_time = int(round(time.time() * 1000))
-    image = cv2.imread('test.png', 0)
+    image = cv2.imread(r'C:\Users\Spectra\NIIAS_CHAR_RECOGNITION\assets\222.PNG', 0)
     boxes, labels = process_image(image, 0.35, 0.80, 0.02, 0.15)
     end_time = int(round(time.time() * 1000))
     print('Frame processing time in ms - {}'.format(end_time - start_time))
